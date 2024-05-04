@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contribution </title>
+    <link rel="stylesheet" href="stylec.css">
+</head>
+<body>
+    <header>
+        <h1>Contribuer à un Projet</h1>
+      </header>
+    
+      <main>
+        <form action="contribuer.php" method="POST">
+            <div class="form-group">
+                <label for="nom_prenoms">Nom et Prenoms :</label>
+                <input type="text" id="nom_prenoms" name="nom_prenoms" required>
+            </div> 
+            <div class="form-group">
+                <label for="e_mail">Adresse E-mail :</label>
+                <input type="text" id="e_mail" name="e_mail" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contacts :</label>
+                <input type="number" id="e_mail" name="contact" required>
+            </div>
+          <div class="form-group">
+            <label for="montant">Montant de la Contribution (en CFA) :</label>
+            <input type="number" id="montant" name="montant" min="1" step="any" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (optionnel) :</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+          </div>
+          <button type="submit">Contribuer</button>
+        </form>
+      </main>
+    
+      <footer>
+        <p>&copy; 2024 Plateforme de Financement Participatif</p>
+      </footer>
+</body>
+</html>
